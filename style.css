@@ -11,6 +11,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   background-color: var(--dark-slate-grey);
@@ -18,14 +19,12 @@ body {
 }
 
 #signup {
-  margin: 130px 350px;
-  width: 100vh;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+  margin: 130px 350px;
+  width: 100vh;
   background-color: var(--white);
   border-radius: 20px;
 }
@@ -91,9 +90,24 @@ body {
   border-radius: 10px;
 }
 
+#signup .signup__textblock input#email.invalid {
+  border: 2px solid red;
+  background-color: rgba(247, 127, 127, 0.645);
+  color: red;
+}
+
 #signup .signup__textblock label {
   font-size: 0.7rem;
   font-weight: bold;
+}
+
+#signup .signup__textblock label.invalid-label {
+  display: block;
+  color: red;
+  font-size: 0.7rem;
+  font-weight: bold;
+  position: absolute;
+  left: 650px;
 }
 
 #signup .signup__textblock form button {
@@ -101,6 +115,13 @@ body {
   color: var(--white);
   height: 5.6vh;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+#signup .signup__textblock form button:active,
+#success button:active {
+  background-color: var(--tomato);
+  border: 2px solid tomato;
 }
 
 /* Image */
@@ -119,7 +140,7 @@ body {
   display: none;
   flex-direction: column;
   justify-content: center;
-  margin: 200px 450px;
+  margin: 200px 500px;
   padding: 50px 40px;
   width: 350px;
   height: 350px;
@@ -144,9 +165,10 @@ body {
   color: var(--white);
   font-weight: 500;
   width: 100%;
-  height: 5vh;
+  height: 6vh;
   border-radius: 8px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 /* ******************************************************** */
@@ -188,6 +210,10 @@ body {
   #signup .signup__textblock h1 {
     font-size: 2.6rem;
     font-weight: 700;
+  }
+
+  #signup .signup__textblock label.invalid-label {
+    left: 250px;
   }
 
   #signup .signup__image {
