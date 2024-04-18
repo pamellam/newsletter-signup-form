@@ -21,7 +21,7 @@ body {
   margin: 130px 350px;
   width: 100vh;
 
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -116,7 +116,7 @@ body {
 
 /* Success Form  */
 #success {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   margin: 200px 450px;
@@ -148,6 +148,8 @@ body {
   border-radius: 8px;
   margin-top: 10px;
 }
+
+/* ******************************************************** */
 /* Footer */
 .attribution {
   font-size: 11px;
@@ -166,6 +168,7 @@ body {
 
   #signup {
     margin: 0px;
+    margin-bottom: 50px;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -174,12 +177,11 @@ body {
 
   #signup .signup__textblock {
     margin: 0 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-self: baseline;
     width: 90%;
-  }
-  #signup .signup__textblock {
     order: 2;
   }
 
