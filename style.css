@@ -24,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 130px 350px;
-  width: 100vh;
+  width: 1000px;
   background-color: var(--white);
   border-radius: 20px;
 }
@@ -67,7 +67,7 @@ body {
 #signup .signup__textblock ul li:before {
   content: '';
   width: 20px;
-  height: 16px;
+  height: 20px;
   background-image: url('./assets/images/icon-list.svg');
   background-size: contain;
   background-repeat: no-repeat;
