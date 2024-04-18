@@ -23,8 +23,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 130px 350px;
-  width: 1000px;
+  margin: 130px 150px;
+  width: 900px;
   background-color: var(--white);
   border-radius: 20px;
 }
